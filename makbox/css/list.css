@@ -1,0 +1,685 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+/*
+html
+{
+overflow-y: scroll; 
+overflow-x:hidden;
+}
+*/
+
+
+#body
+{ 
+background: url('/photos/bg.jpg') no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+/* same background size for all browsers */
+}
+
+
+#menu
+{
+height:6em;
+background-color:#283B4C;
+padding: 1px;
+margin: auto;
+text-align:center;
+text-decoration: none;
+display: inline-block;
+border-style:solid;
+border-width:0em;
+border-color:red;
+width:100%;
+position: absolute;
+top:0%;
+left:0%;
+box-shadow:none;
+opacity:;
+}
+
+
+
+
+#form
+{
+background-color:blue;
+border-style:solid;
+border-width:0.3em;
+border-color:yellow;
+height:3,5em;
+width:10em;
+}
+
+
+#table1
+{
+background-color:;
+opacity:;
+}
+
+
+
+
+.myautoscroll 
+{
+height:65%;
+overflow: hidden;
+}
+
+
+.myautoscroll:hover
+{
+overflow: auto;
+background-color:;
+}
+
+
+
+
+#all
+{
+background-color:red;
+}
+
+
+
+#table2
+{
+font-size:22px;
+text-align:center;
+width:60%;
+height:20%;
+opacity:.90;
+top:0;
+left:25%;
+position: fixed;
+background-color:white; /* einai gia thn fwteinothta otan patas apnw sto koumpi */
+overflow:auto;
+}
+
+
+
+
+#table_storage
+{
+text-align:center;
+border-collapse: separate;
+border-spacing: 10px;
+}
+
+
+
+
+/*
+#list_img
+{
+background-color:white;
+border-style:inset;
+border-width:1em;
+border-color:white;
+height:25%;
+width:25%;
+box-shadow: 10px 10px 5px #283B4C;
+}
+*/
+
+
+#list_img
+{
+background:#000; /*Change this to a background image or remove*/
+border:solid #fff;
+border-width:6px 6px 20px 6px;
+box-shadow:1px 1px 5px #333; /* Standard blur at 5px. Increase for more depth */
+-webkit-box-shadow:1px 1px 5px #333;
+-moz-box-shadow:1px 1px 5px #333;
+height:250px; /*Set to height of your image or desired div*/
+width:400px; /*Set to width of your image or desired div*/
+}
+
+
+
+
+
+
+
+#delete
+{
+border:0;
+opacity:0.7;
+display: inline-block;
+border-radius: 4px;
+background-color:red;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 10px;
+width: 65px;
+height:45px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+
+
+#delete:hover
+{
+border:0;
+opacity:1;
+display: inline-block;
+border-radius: 4px;
+background-color:red;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 10px;
+width: 65px;
+height:45px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+
+
+
+
+
+#delete2
+{
+height:2em;
+width:7.5em;
+border-style:solid;
+border-color:;
+background-color:white;
+box-shadow:none;
+opacity:0.7;
+color:black;
+}
+
+
+#restore
+{
+height:2em;
+width:4.5em;
+border-style:solid;
+border-color:;
+background-color:white;
+box-shadow:none;
+opacity:0.7;
+color:black;
+}
+
+
+
+
+#logout
+{
+background-color:brown;
+color: white;
+padding: 3px 6px;
+margin: auto;
+text-align:center;
+text-decoration: none;
+display: inline-block;
+border-style:solid;
+border-color:red;
+box-shadow:none;
+opacity:0.7;
+}
+
+
+
+#goback
+{
+background-color:brown;
+color:white;
+padding: 3px 6px;
+margin: auto;
+text-align:center;
+text-decoration: none;
+display: inline-block;
+border-style:solid;
+border-color:red;
+box-shadow:none;
+opacity:0.7;
+}
+
+
+
+
+
+#table
+{
+border-collapse: separate;
+border-spacing: 2px;
+}
+
+#th
+{
+padding:6px;
+}
+
+
+#td
+{
+padding:6px;
+}
+
+
+th
+{
+color:white;
+}
+
+#a
+{
+text-decoration: none;
+color:black;
+}
+
+
+
+
+
+#form_image
+{
+border-style:groove;
+border-width:1em;
+border-color:white;
+height:130px;
+max-width:350px;
+min-width:300px;
+padding:10px 50px;
+font-family:raleway;
+background-image:url('photos/gallery2.jpg');
+background-repeat:no-repeat;
+background-size:100% 100%;
+}
+
+
+
+
+#abc2
+{
+width:100%;
+height:100%;
+opacity:1;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:#313131; /* einai gia thn fwteinothta otan patas apnw sto koumpi */
+overflow:auto;
+}
+
+
+
+#popup2
+{
+position:absolute;
+left:50%;
+top:0%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif;
+}
+
+
+
+#close2 
+{
+position:absolute;
+left:40%;
+top:0px;
+cursor:pointer;
+}
+
+
+
+
+
+#file_photo
+{
+position:absolute;
+left:5%;
+top:40%;
+cursor:pointer;
+width:10em;
+height:3em;
+border-style:groove;
+border-color:;
+background-color:transparent;
+color:black;
+padding: 10px;
+margin: 5px;
+}
+
+
+
+#submit_photo
+{
+position:absolute;
+left:57%;
+top:40%;
+cursor:pointer;
+width:10em;
+height:3em;
+border:;
+background-color:transparent;
+color:black;
+padding: 10px;
+margin: 5px;
+}
+
+
+
+
+
+#search_user
+{
+position:absolute;
+right:1%;
+bottom:28%;
+}
+
+
+
+#search_text
+{
+height:2em;
+width:9em;
+border-style:solid;
+border-width:0.1em;
+border-color:grey;
+color:black;
+}
+
+
+
+
+
+.css_btn_class {
+	font-size:22px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:6px solid #dcdcdc;
+	padding:2px 4px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #ededed 21%, #dfdfdf 84% );
+	background:-ms-linear-gradient( top, #ededed 21%, #dfdfdf 84% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(21%, #ededed), color-stop(84%, #dfdfdf) );
+	background-color:#ededed;
+	color:#777777;
+	display:inline-block;
+	text-shadow:5px 12px 15px #ffffff;
+ 	-webkit-box-shadow: 1px 1px 11px -14px #ffffff;
+ 	-moz-box-shadow: 1px 1px 11px -14px #ffffff;
+ 	box-shadow: 1px 1px 11px -14px #ffffff;
+}
+
+
+.css_btn_class:hover 
+{
+	background:-moz-linear-gradient( center top, #dfdfdf 21%, #ededed 84% );
+	background:-ms-linear-gradient( top, #dfdfdf 21%, #ededed 84% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(21%, #dfdfdf), color-stop(84%, #ededed) );
+	background-color:#dfdfdf;
+}
+
+
+.css_btn_class:active 
+{
+	position:relative;
+	top:1px;
+}
+
+
+
+#bottom
+{
+
+border-left: 1px solid black;
+height: 100%;
+
+height:5em;
+background-color:#283B4C;
+padding: 1px;
+margin: auto;
+text-align:center;
+text-decoration: none;
+display: inline-block;
+border-style:solid;
+border-width:0em;
+border-color:red;
+width:100%;
+position: absolute;
+bottom:0%;
+left:0%;
+box-shadow:none;
+opacity:;
+}
+
+
+
+
+
+
+#delete_account
+{
+width:200px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:#283B4C;
+display:inline-block;
+line-height:80px;
+color:white;
+background:#283B4C url('/photos/menu/delete_account2.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+}
+
+
+
+
+#delete_account:hover
+{
+width:200px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:green;
+border-color:green;
+display:inline-block;
+line-height:500%;
+color:white;
+}
+
+
+
+
+
+
+#backup
+{
+width:200px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:#283B4C;
+display:inline-block;
+line-height:80px;
+color:white;
+background:#283B4C url('/photos/menu/backup.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+}
+
+
+
+
+#backup:hover
+{
+width:200px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:green;
+border-color:green;
+display:inline-block;
+line-height:500%;
+color:white;
+}
+
+
+
+
+
+#modules
+{
+width:210px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:#283B4C;
+display:inline-block;
+line-height:80px;
+color:white;
+background:#283B4C url('/photos/menu/modules.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+}
+
+
+
+
+#modules:hover
+{
+width:210px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:green;
+border-color:green;
+display:inline-block;
+line-height:500%;
+color:white;
+}
+
+
+
+
+
+
+
+#storage
+{
+width:200px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:#283B4C;
+display:inline-block;
+line-height:80px;
+color:white;
+background:#283B4C url('/photos/menu/storage.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+}
+
+
+
+
+#storage:hover
+{
+width:200px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:green;
+border-color:green;
+display:inline-block;
+line-height:500%;
+color:white;
+}
+
+
+
+
+#android
+{
+width:200px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:#283B4C;
+display:inline-block;
+line-height:80px;
+color:white;
+background:#283B4C url('/photos/menu/android2.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+}
+
+
+
+
+#android:hover
+{
+width:200px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:green;
+border-color:green;
+display:inline-block;
+line-height:500%;
+color:white;
+}
+
+
+
+
+
+
+#table_bott 
+{
+border-collapse: collapse; 
+}
+
+#trbott
+{
+border: none; 
+}
+
+#td_bott 
+{
+border-right: solid 1px black; 
+border-left: solid 1px black;
+}

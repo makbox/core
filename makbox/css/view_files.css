@@ -1,0 +1,163 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+
+#top, #bottom, #left, #right 
+{
+background: black;
+opacity:0.7;
+position: fixed;
+}
+
+#left, #right
+{
+top: 0; bottom: 0;
+width: 50px;
+}
+
+#left 
+{
+left: 0; 
+}
+
+#right 
+{ 
+right: 0; 
+}
+		
+#top, #bottom 
+{
+left: 0; right: 0;
+height: 50px;
+}
+
+#top
+{
+top: 0; 
+}
+
+#bottom 
+{ 
+bottom: 0; 
+}
+
+
+
+
+#center_eye
+{
+position: fixed;
+top: 12%;
+left:50%;
+margin-top: -50px;
+margin-left: -100px;
+}
+
+
+
+
+
+
+#see_files
+{
+position: fixed;
+top: 35%;
+left:36%;
+margin-top: -50px;
+margin-left: -100px;
+}
+
+
+
+
+
+#close_tab
+{
+position: fixed;
+top: 15%;
+left: 100%;
+margin-top: -50px;
+margin-left: -100px;
+color: black;
+}
+
+
+
+
+#img_size
+{
+height:18;
+width:18;
+}
+
+
+
+
+#img_size:hover
+{
+height:23;
+width:23;
+}
+
+
+
+#text
+{
+position: fixed;
+top: 35%;
+left:35%;
+margin-top: -50px;
+margin-left: -100px;
+width:700;
+}
+
+
+
+
+#excel
+{
+position: fixed;
+top: 35%;
+left:35%;
+margin-top: -50px;
+margin-left: -100px;
+height:500;
+width:700;
+height:550;
+overflow-y: scroll; 
+}
+
+
+
+
+
+audio 
+{
+position: fixed;
+top: 35%;
+left:43%;
+margin-top: -50px;
+margin-left: -100px;
+height:150;
+width: 400; 
+}

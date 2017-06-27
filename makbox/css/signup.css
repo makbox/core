@@ -1,0 +1,434 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+
+
+#body
+{
+background-image:url('photos/');
+background-repeat:no-repeat;
+background-size:100% 100%;
+opacity:1;
+}
+
+
+#form1
+{
+position:relative;
+top:20%;
+left:0%;
+background-color:;
+opacity:0.7;
+height:32.8em;
+width:25em;
+text-align:center;
+}
+
+
+
+#table
+{
+position:relative;
+top:20%;
+left:0%;
+background-color:;
+opacity:1;
+height:2em;
+width:10em;
+border-style:solid;
+border-color:white;
+border-width:0em;
+}
+
+
+
+
+
+
+#table2
+{
+background-color:;
+opacity: 0.6;
+height:2em;
+width:30em;
+border-style:solid;
+border-color:white;
+border-width:0em;
+}
+
+
+
+
+::-webkit-input-placeholder 
+{ /* Chrome/Opera/Safari */
+color: black;
+}
+
+
+
+
+
+
+
+
+#name
+{
+background-image:url('/photos/menu/signup_user.png'); 
+background-repeat:no-repeat; 
+background-size:12% 80%;
+background-position: left; 
+height:3.5em;
+width:22em;
+background-color:;
+border-color:blue;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+
+
+#pass
+{
+background-image:url('/photos/menu/signup_pass.png'); 
+background-repeat:no-repeat; 
+background-size:11% 60%;
+background-position: left; 
+height:3.5em;
+width:22em;
+background-color:;
+border-color:blue;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+
+
+#email
+{
+background-image:url('/photos/menu/signup_mail.png'); 
+background-repeat:no-repeat; 
+background-size:12% 100%;
+background-position: left; 
+height:3.5em;
+width:22em;
+background-color:;
+border-color:blue;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+
+#day
+{
+border-style:solid;
+border-width: 0.2em; 
+border-color:blue;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+height:2.5em;
+width:7em;
+background-color:white;
+color:;
+}
+
+
+
+#month
+{
+order-style:solid;
+border-width: 0.2em; 
+border-color:blue;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+height:2.5em;
+width:7em;
+background-color:white;
+color:;
+}
+
+
+
+
+#year
+{
+order-style:solid;
+border-width: 0.2em; 
+border-color:blue;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+height:2.5em;
+width:7em;
+background-color:white;
+color:;
+}
+
+
+
+#genderr
+{
+height:1.5em;
+width:3em;
+}
+
+
+
+
+
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    color:#f2f2f2;
+    font-family:Arial, sans-serif;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -38px top no-repeat;
+    cursor:pointer;
+}
+
+input[type="radio"]:checked + label span {
+    background:url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/check_radio_sheet.png) -57px top no-repeat;
+}
+
+
+
+
+
+
+#submit
+{
+height:3em;
+width:22em;
+color:white;
+font: bold;
+background-color:blue;
+border-color:blue;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+}
+
+
+
+
+
+#submit:hover
+{
+height:3em;
+width:22em;
+color:white;
+font: bold;
+background-color:green;
+border-color:green;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+}
+
+
+
+
+#a
+{
+color:black;
+text-decoration:none;
+text-align:center;
+font-size:20px;
+}
+
+
+
+#a:hover
+{
+color:red;
+text-decoration:none;
+text-align:center;
+}
+
+
+
+#img
+{
+height:10em;
+width:17em;
+}
+
+
+
+#h
+{
+font-size:28px;
+font-family: "Times New Roman", Times, serif;
+color:black;
+opacity:0.7;
+}
+
+
+
+#hh
+{
+font-size:24px;
+font-family: "Times New Roman", Times, serif;
+color:black;
+opacity: 0.5;
+}
+
+
+
+
+
+
+hr 
+{
+height: 5px;
+width:49.9%;
+color: #123455;
+background-color:blue;
+opacity:0.7;
+border: none;
+}
+
+
+
+
+#header1
+{
+background-image:url('/photos/signup_header1.png'); /* multi backgrounds with position */
+background-repeat:no-repeat; 
+background-size:100% 40%;
+background-position: center; 
+height:5em;
+position:absolute;
+top:0;
+left:0;
+right:;
+margin:0 auto;
+height:100%;
+width:25%;
+padding: 30px;
+background-color:#283B4C;
+opacity:0.7;
+color:white;
+}
+
+
+
+
+#header2
+{
+background-image:url('/photos/signup_header2.png'); /* multi backgrounds with position */
+background-repeat:no-repeat; 
+background-size:100% 40%;
+background-position: center; 
+height:5em;
+position:absolute;
+top:0;
+left:;
+right:0;
+margin:0 auto;
+height:100%;
+width:25%;
+padding: 30px;
+background-color:#283B4C;
+opacity:0.7;
+color:white;
+}
+
+
+
+
+
+
+
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  position: relative;
+  margin: 0;
+  padding-bottom: 6em;
+  min-height: 100%;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+.demo {
+  margin: 0 auto;
+  padding-top: 64px;
+  max-width: 640px;
+  width: 94%;
+}
+
+.demo h1 {
+  margin-top: 0;
+}
+
+/**
+ * Footer Styles
+ */
+
+
+.footer 
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 0em;
+  background-color:;
+  text-align:center;
+ }
+
+
+

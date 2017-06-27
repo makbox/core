@@ -1,0 +1,367 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+
+#body
+{
+/*
+background-color:;
+background-image:url('/photos/photograph.jpg');
+background-repeat:no-repeat;
+background-size:100% 100%;
+*/
+margin: 0;
+}
+
+
+table
+{
+position:absolute;
+top:0%;
+left:0%;
+background-color:white;
+border-spacing: 15px; 
+height:100%;
+}
+
+
+
+a
+{
+text-decoration: none;
+color:black;
+}
+
+
+
+
+#verticalLine 
+{
+background-image:url('');
+background-repeat:no-repeat;
+background-size:100% 100%;
+background-color:#02756f;
+ width: 50px; /* Use only border style */
+  height: 100%;
+  float: left; 
+  border: 1px inset; 
+}
+
+
+
+#verticalLine2
+{
+background-color:#02756f;
+ width: 100px; /* Use only border style */
+  height: 100%;
+  float: right; 
+  border: 1px inset; 
+}
+
+
+
+
+#form_image
+{
+border-style:groove;
+border-width:1em;
+border-color:white;
+height:130px;
+max-width:350px;
+min-width:300px;
+padding:10px 50px;
+font-family:raleway;
+background-image:url('/photos/gallery2.jpg');
+background-repeat:no-repeat;
+background-size:100% 100%;
+}
+
+
+
+
+
+#abc2
+{
+width:100%;
+height:100%;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:; /* einai gia thn fwteinothta otan patas apnw sto koumpi */
+overflow:auto;
+}
+
+
+
+#popup2
+{
+position:absolute;
+left:50%;
+top:0%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif;
+}
+
+
+#close2 
+{
+position:absolute;
+left:40%;
+top:0px;
+cursor:pointer;
+}
+
+
+
+#file_photo
+{
+position:absolute;
+left:5%;
+top:40%;
+cursor:pointer;
+width:10em;
+height:3em;
+border-style:groove;
+border-color:;
+background-color:transparent;
+color:black;
+padding: 10px;
+margin: 5px;
+}
+
+
+
+
+#submit_photo
+{
+position:absolute;
+left:57%;
+top:40%;
+cursor:pointer;
+width:10em;
+height:3em;
+border:;
+background-color:transparent;
+color:black;
+padding: 10px;
+margin: 5px;
+}
+
+
+
+
+
+#div_background
+{
+position:absolute;
+top:0;
+right:0;
+}
+
+
+
+
+
+#abc3
+{
+width:100%;
+height:100%;
+top:0;
+left:0;
+display:none;
+position:fixed;
+background-color:; /* einai gia thn fwteinothta otan patas apnw sto koumpi */
+overflow:auto;
+}
+
+
+
+#popup3
+{
+position:absolute;
+left:50%;
+top:0%;
+margin-left:-202px;
+font-family:'Raleway',sans-serif;
+}
+
+
+#close3 
+{
+position:absolute;
+left:40%;
+top:0px;
+cursor:pointer;
+}
+
+
+
+#form_back
+{
+border-style:solid;
+border-width:1em;
+border-color:white;
+height:200px;
+max-width:350px;
+min-width:300px;
+padding:10px 50px;
+font-family:raleway;
+background-image:url('/photos/wood.jpg');
+background-repeat:no-repeat;
+background-size:100% 100%;
+background-color:white; /* einai gia thn fwteinothta otan patas apnw sto koumpi */
+overflow:auto;
+}
+
+
+
+
+
+
+#file_back
+{
+position:absolute;
+left:5%;
+top:40%;
+cursor:pointer;
+width:10em;
+height:3em;
+border-style:groove;
+border-color:;
+background-color:transparent;
+color:black;
+padding: 10px;
+margin: 5px;
+}
+
+
+
+
+#sub_back
+{
+position:absolute;
+left:55%;
+top:40%;
+cursor:pointer;
+width:12em;
+height:3em;
+border:;
+background-color:transparent;
+color:black;
+padding: 10px;
+margin: 5px;
+}
+
+
+
+
+
+
+.css_btn_class {
+	font-size:22px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:6px solid #dcdcdc;
+	padding:2px 4px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #ededed 21%, #dfdfdf 84% );
+	background:-ms-linear-gradient( top, #ededed 21%, #dfdfdf 84% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(21%, #ededed), color-stop(84%, #dfdfdf) );
+	background-color:#ededed;
+	color:#777777;
+	display:inline-block;
+	text-shadow:5px 12px 15px #ffffff;
+ 	-webkit-box-shadow: 1px 1px 11px -14px #ffffff;
+ 	-moz-box-shadow: 1px 1px 11px -14px #ffffff;
+ 	box-shadow: 1px 1px 11px -14px #ffffff;
+}.css_btn_class:hover {
+	background:-moz-linear-gradient( center top, #dfdfdf 21%, #ededed 84% );
+	background:-ms-linear-gradient( top, #dfdfdf 21%, #ededed 84% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(21%, #dfdfdf), color-stop(84%, #ededed) );
+	background-color:#dfdfdf;
+}.css_btn_class:active {
+	position:relative;
+	top:1px;
+}
+
+
+
+
+#foo 
+{
+display: block;
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+}
+
+
+
+#body_image_profile
+{
+background-image:url('/photos/photograph.jpg');
+background-repeat:no-repeat;
+background-size:100% 100%;
+}
+
+
+
+
+
+
+
+#back
+{
+background-color:brown;
+width:150px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:brown;
+border-radius: 15px;
+display:inline-block;
+line-height:30px;
+color:white;
+}
+
+
+
+#back:hover
+{
+width:150px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:black;
+border-color:black;
+border-radius: 15px;
+display:inline-block;
+line-height:30px;
+color:white;
+}

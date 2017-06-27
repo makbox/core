@@ -1,0 +1,300 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+html
+{
+overflow: hidden;
+}
+
+#body
+{ 
+background: url('photos/.jpg') no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+/* same background size for all browsers */
+}
+
+
+
+
+#form
+{
+border-width:6em;
+height:8em;
+width:20em;
+}
+
+
+
+#menu
+{
+height:13em;
+background-color:#283B4C;
+padding: 1px;
+margin: auto;
+text-align:center;
+text-decoration: none;
+display: inline-block;
+border-style:solid;
+border-width:0em;
+border-color:red;
+width:100%;
+position: absolute;
+top:0%;
+left:0%;
+box-shadow:none;
+opacity:;
+color:white;
+}
+
+
+
+#table
+{
+border-collapse: separate;
+border-spacing: 2px;
+color:white;
+}
+
+#th
+{
+padding:6px;
+}
+
+
+#td
+{
+padding:6px;
+}
+
+
+#file 
+{
+}
+
+
+
+#upload
+{
+background-image:url('/photos/menu/.jpg');
+background-repeat:no-repeat;
+background-size:100%;
+height:70px;
+width:110px;
+border:0em;
+display: inline-block;
+border-radius: 5px;
+background-color:grey;
+}
+
+
+
+
+#upload:hover
+{
+background-image:url('/photos/menu/.jpg');
+background-repeat:no-repeat;
+background-size:100%;
+height:70px;
+width:110px;
+border:0em;
+display: inline-block;
+border-radius: 5px;
+background-color:red;
+}
+
+
+
+
+
+
+#file
+{
+display: inline-block;
+border-radius: 4px;
+background-color:grey;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 10px;
+width: 180px;
+height:70px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+
+
+#file:hover
+{
+display: inline-block;
+border-radius: 4px;
+background-color:red;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 10px;
+width: 180px;
+height:70px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+
+
+
+
+
+
+#name
+{
+display: inline-block;
+border-radius: 4px;
+background-color:grey;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 10px;
+width: 200px;
+height:70px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+
+
+#name:hover
+{
+display: inline-block;
+border-radius: 4px;
+background-color:red;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 10px;
+width: 200px;
+height:70px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+
+
+
+
+
+#button 
+{
+  display: inline-block;
+  border-radius: 4px;
+  background-color:grey;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 90px;
+  height:50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+
+#button:hover
+{
+  display: inline-block;
+  border-radius: 4px;
+  background-color:red;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 10px;
+  width: 90px;
+  height:50px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+
+
+
+#button span 
+{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#button span:after 
+{
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#button:hover span 
+{
+  padding-right: 25px;
+}
+
+#button:hover span:after 
+{
+  opacity: 1;
+  right: 0;
+}
+
+
+
+
+.footer 
+{
+height:25em;
+position: absolute;
+right: 0;
+bottom:0;
+left: 0;
+padding: 0em;
+background-color:;
+text-align:center;
+background-image:url('/photos/footer/box_footer.jpg');
+background-repeat:no-repeat;
+background-size:100% 100%;
+ }

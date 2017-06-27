@@ -1,0 +1,261 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+
+#body
+{
+background-color:white;
+}
+
+
+
+#table
+{
+border-collapse: separate;
+border-spacing: 15px;
+font-size:18px;
+text-align:center;
+width:40%;
+height:;
+border-style:solid;
+border-width:1em;
+border-color:white;
+background-color:white;
+}
+
+
+
+
+#th
+{
+font-size:18px;
+font-family:Arial;
+font-weight:normal bold;
+}
+
+
+
+
+#user_acc
+{
+height:5em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.1em;
+border-color:#283B4C;
+background:#283B4C url('/photos/menu/user_acc.png') no-repeat 10px center;
+color:white;
+}
+
+
+#user_acc:hover
+{
+height:5em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.5em;
+background:#283B4C url('/photos/menu/user_acc.png') no-repeat 10px center;
+border-color:brown;
+color:white;
+}
+
+
+
+
+#email_acc
+{
+height:5em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.1em;
+border-color:#283B4C;
+background:#283B4C url('/photos/menu/email_acc.png') no-repeat 10px center;
+color:white;
+}
+
+
+#email_acc:hover
+{
+height:5em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.5em;
+background:#283B4C url('/photos/menu/email_acc.png') no-repeat 10px center;
+border-color:brown;
+color:white;
+}
+
+
+
+#folder_acc
+{
+height:5em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.1em;
+border-color:#283B4C;
+background:#283B4C url(photos/menu/folder_acc.png) no-repeat 10px center;
+color:white;
+}
+
+
+#folder_acc:hover
+{
+height:5em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.5em;
+background:#283B4C url('/photos/menu/folder_acc.png') no-repeat 10px center;
+border-color:brown;
+color:white;
+}
+
+
+
+
+
+#password_acc
+{
+height:3em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.1em;
+border-color:#283B4C;
+background: url('/photos/menu/password_acc.png') no-repeat 10px center;
+}
+
+
+
+
+#password_acc
+{
+height:3em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.1em;
+border-color:brown;
+}
+
+
+
+
+
+
+
+#enter_acc
+{
+height:4em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.1em;
+border-color:#283B4C;
+background:#283B4C url('/photos/menu/enter_acc.png') no-repeat 10px center;
+color:white;
+}
+
+
+#enter_acc:hover
+{
+height:4em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.1em;
+border-color:brown;
+background:brown url('/photos/menu/enter_acc.png') no-repeat 10px center;
+color:white;
+}
+
+
+
+
+
+#cancel_acc
+{
+height:4em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.1em;
+border-color:#283B4C;
+background:#283B4C url('/photos/menu/cancel_acc.png') no-repeat 10px center;
+}
+
+
+#cancel_acc:hover
+{
+height:4em;
+width:20em;
+text-align:center;
+border-style:solid;
+border-width:0.1em;
+border-color:brown;
+background:brown url('/photos/menu/cancel_acc.png') no-repeat 10px center;n;
+}
+
+
+
+
+
+
+
+
+#back_acc
+{
+width:250px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:purple;
+display:inline-block;
+line-height:40px;
+color:white;
+background:purple url('/photos/menu/back1_acc.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+}
+
+
+
+
+#back_acc:hover
+{
+width:250px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:green;
+border-color:green;
+display:inline-block;
+line-height:40px;
+color:white;
+}
+

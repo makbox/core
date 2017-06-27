@@ -1,0 +1,273 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+
+#body
+{
+background-image:url('');
+background-repeat:no-repeat;
+background-size:100%;
+}
+
+
+
+
+
+#header1
+{
+height:8em;
+position:absolute;
+top:0;
+left:0;
+right:0;
+margin:0 auto;
+width:98.7%;
+padding: 10px;
+background-color:;
+opacity:;
+color:black;
+}
+
+
+
+
+
+
+
+#table
+{
+position: fixed;
+top: 30%;
+left: 50%;
+margin-top: -50px;
+margin-left: -100px;
+border-collapse: separate;
+border-spacing: 2px;
+}
+
+
+
+
+
+#account_img
+{
+background:#000; /*Change this to a background image or remove*/
+border:solid #fff;
+border-width:6px 6px 20px 6px;
+box-shadow:1px 1px 5px #333; /* Standard blur at 5px. Increase for more depth */
+-webkit-box-shadow:1px 1px 5px #333;
+-moz-box-shadow:1px 1px 5px #333;
+height:150px; /*Set to height of your image or desired div*/
+width:200px; /*Set to width of your image or desired div*/
+border-radius: 50%;
+}
+
+
+
+#submit
+{
+height:3em;
+width:20em;
+background-color:red;
+opacity:0.8;
+color:white;
+font: bold;
+border-radius:10px;
+}
+
+
+
+
+#submit:hover
+{
+height:3em;
+width:20em;
+background-color:red;
+opacity:1;
+color:white;
+font: bold;
+border-radius:10px;
+}
+
+
+
+#pass
+{
+height:2.5em;
+width:20em;
+border-radius:10px;
+text-align:center;
+}
+
+
+
+
+::-webkit-input-placeholder 
+{ /* Chrome/Opera/Safari */
+color: black;
+}
+
+
+
+
+#back
+{
+width:260px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:green;
+display:inline-block;
+line-height:30px;
+color:white;
+background:green url('/photos/menu/back1_acc.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+border-radius:10px;
+}
+
+
+
+
+#back:hover
+{
+width:260px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:red;
+border-color:red;
+display:inline-block;
+line-height:30px;
+color:white;
+border-radius:10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#mes1
+{
+width:300px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:green;
+display:inline-block;
+line-height:40px;
+color:white;
+background:green url('/photos/account/message1.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+border-radius:10px;
+}
+
+
+
+
+#mes1:hover
+{
+width:300px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:red;
+border-color:red;
+display:inline-block;
+line-height:40px;
+color:white;
+border-radius:10px;
+}
+
+
+
+
+
+
+
+#mes2
+{
+width:300px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:green;
+display:inline-block;
+line-height:40px;
+color:white;
+background:green url('/photos/account/message2.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+border-radius:10px;
+}
+
+
+
+
+#mes2:hover
+{
+width:300px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:red;
+border-color:red;
+display:inline-block;
+line-height:40px;
+color:white;
+border-radius:10px;
+}
+
+
+
+
+
+
+
+#clock
+{
+position: fixed;
+top:5;
+right: 0;
+}
+
+
+
+
+
+#notice
+{
+position: fixed;
+bottom:5%;
+left: 45%;
+margin-top: -50px;
+margin-left: -100px;
+width:600px;
+font-size:25px;
+}
+

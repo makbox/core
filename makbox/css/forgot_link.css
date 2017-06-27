@@ -1,0 +1,285 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+body
+{
+background-image:url('/photos/menu/.jpg'),url('/photos/menu/.jpg'); /* multi backgrounds with position */
+background-repeat:no-repeat; 
+background-size:30% 80%;
+background-position: left,right; 
+}
+
+
+
+
+
+.center 
+{
+position: fixed;
+top: 15%;
+left: 50%;
+margin-top: -50px;
+margin-left: -100px;
+}
+
+
+
+
+
+#key
+{
+background-image:url('/photos/menu/key_word.png'); 
+background-repeat:no-repeat; 
+background-size:15% 130%;
+background-position: left; 
+height:3.5em;
+width:22em;
+background-color:;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+#pass
+{
+background-image:url('/photos/menu/pass_forgot.png'); 
+background-repeat:no-repeat; 
+background-size:15% 80%;
+background-position: left; 
+height:3.5em;
+width:22em;
+background-color:;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+
+#submit
+{
+height:3em;
+width:22em;
+background-color:#00e64d;
+border-style:solid;
+border-width:0.1em;
+border-color:black;
+border-radius:5px;
+color:white;
+font: bold;
+}
+
+
+
+
+#submit:hover
+{
+height:3em;
+width:22em;
+background-color:#ff4d4d;
+border-style:solid;
+border-width:0.1em;
+border-color:black;
+border-radius:5px;
+color:white;
+font: bold;
+}
+
+
+
+
+
+
+
+#back
+{
+width:290px;
+text-decoration:none;
+border-style:solid;
+border-width:0.1em;
+border-color:black;
+display:inline-block;
+line-height:30px;
+border-radius:5px;
+color:white;
+background:#00e64d url('/photos/menu/back2_acc.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+}
+
+
+
+
+
+#back:hover
+{
+width:290px;;
+text-decoration:none;
+border-style:solid;
+border-width:0.1em;
+background-color:#ff4d4d;
+border-color:black;
+display:inline-block;
+line-height:30px;
+color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Second same for connection disposable*/
+
+
+
+#key_word2
+{
+background-image:url('/photos/menu/one_connection3.png'); 
+background-repeat:no-repeat; 
+background-size:15% 80%;
+background-position: left; 
+height:4em;
+width:24em;
+background-color:;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+
+
+
+
+
+#submit2
+{
+height:3.5em;
+width:24em;
+background-color:#00e64d;
+border-style:solid;
+border-width:0.1em;
+border-color:black;
+border-radius:5px;
+color:white;
+font: bold;
+}
+
+
+
+
+#submit2:hover
+{
+height:3.5em;
+width:24em;
+background-color:#ff4d4d;
+border-style:solid;
+border-width:0.1em;
+border-color:black;
+border-radius:5px;
+color:white;
+font: bold;
+}
+
+
+
+
+
+
+
+
+#back2
+{
+width:318px;
+text-decoration:none;
+border-style:solid;
+border-width:0.1em;
+border-color:black;
+display:inline-block;
+line-height:35px;
+border-radius:5px;
+color:white;
+background:#00e64d url('/photos/menu/back2_acc.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+}
+
+
+
+
+#back2:hover
+{
+width:318px;;
+text-decoration:none;
+border-style:solid;
+border-width:0.1em;
+background-color:#ff4d4d;
+border-color:black;
+display:inline-block;
+line-height:35px;
+color:white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#a
+{
+color:white;
+text-decoration:none;
+}
+
+
+
+#forgot
+{
+color:white;
+text-decoration:none;
+}
