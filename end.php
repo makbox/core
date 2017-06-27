@@ -478,38 +478,6 @@ window.onload=changeHashOnLoad;
        copy($file_mod_ex, $file_to_go_mod_ex);
      }
 
-
-
-
-
-
-
-
-
-
-
-   //cut from folder perl
-
-    mkdir ("/var/www/$current_folder/perl",0777);
-   
-
-    $src_perl = "/var/www/$current_folder/makbox/perl";
-    $dst_perl = "/var/www/$current_folder/perl";
-    $files_perl = glob("/var/www/$current_folder/makbox/perl/*.*");
-   foreach($files_perl as $file_perl)
-    {
-       $file_to_go_perl = str_replace($src_perl,$dst_perl,$file_perl);
-       copy($file_perl, $file_to_go_perl);
-     }
-
-
-  
-
-
-
-
-
-
   
 
 
