@@ -1,0 +1,511 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+
+#body
+{
+border-width: 0px 10px 0px 10px;
+border-style: solid;
+border-color: #123863;
+border-radius:40px 40px 60px 60px;
+-moz-border-radius:40px 40px 60px 60px;
+-webkit-border-radius:40px 40px 60px 60px;
+}
+
+/*
+background-color:;
+border-style:solid;
+border-color:grey;
+border-width:4em;
+opacity:0.7;
+*/
+
+
+#header
+{
+background-image:url('cloud1.png');
+background-repeat:no-repeat;
+background-size:20% 80%;
+background-position: center; 
+opacity:1;
+height:15em;
+top: 0%;
+}
+
+
+
+#form1
+{
+background-color:white;
+opacity: 0.6;
+height:22.7em;
+width:30em;
+border-style:solid;
+border-color:;
+border-width:0.3em;
+}
+
+
+
+::-webkit-input-placeholder 
+{ /* Chrome/Opera/Safari */
+color: black;
+}
+
+
+
+#hr1
+{
+height:0.1em;
+background-color:#123863;
+border-width: 5px;
+border-radius:80px;
+}
+
+
+#hr2
+{
+height:0.1em;
+background-color:#123863;
+}
+
+
+
+#host
+{
+height:2.6em;
+width:19em;
+background-image:url('host.png'); 
+background-repeat:no-repeat; 
+background-size:15% 90%;
+background-position: left; 
+background-color:;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+#database
+{
+height:2.6em;
+width:19em;
+background-image:url('database.png'); 
+background-repeat:no-repeat; 
+background-size:15% 90%;
+background-position: left; 
+background-color:;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+
+#user
+{
+height:2.6em;
+width:19em;
+background-image:url('name.png'); 
+background-repeat:no-repeat; 
+background-size:15% 100%;
+background-position: left; 
+background-color:;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+
+
+#pass
+{
+height:2.6em;
+width:19em;
+background-image:url('pass.png'); 
+background-repeat:no-repeat; 
+background-size:14% 80%;
+background-position: left; 
+background-color:;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+
+#reset
+{
+background-image:url('cancel.png'); 
+background-repeat:no-repeat; 
+background-size:17% 100%;
+background-position:left; 
+height:3em;
+width:15em;
+background-color:#1F4879;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+font: bold;
+color:white;
+}
+
+
+
+
+#reset:hover
+{
+height:3em;
+width:15em;
+background-color:#283B4C;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+font: bold;
+color:white;
+}
+
+
+
+
+
+#submit
+{
+background-image:url('next.png'); 
+background-repeat:no-repeat; 
+background-size:17% 80%;
+background-position:right; 
+height:3em;
+width:15em;
+background-color:#1F4879;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+font: bold;
+color:white;
+}
+
+
+
+
+#submit:hover
+{
+height:3em;
+width:15em;
+background-color:#283B4C;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+font: bold;
+color:white;
+}
+
+
+
+
+
+#text
+{
+font-size:16px;
+font-family: "Times New Roman", Times, serif;
+color:black;
+opacity:0.7;
+}
+
+
+
+.footer
+{
+background-color:;
+opacity:;
+height:;
+position:absolute;
+right: 0;
+bottom: 0;
+left: 0;
+padding: 0em;
+text-align:center;
+}
+
+
+
+#username
+{
+height:2.6em;
+width:19em;
+background-image:url('name.png'); 
+background-repeat:no-repeat; 
+background-size:15% 100%;
+background-position: left; 
+background-color:;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+
+#password
+{
+height:2.6em;
+width:19em;
+background-image:url('pass.png'); 
+background-repeat:no-repeat; 
+background-size:14% 80%;
+background-position: left; 
+background-color:;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+
+#mail
+{
+height:2.6em;
+width:19em;
+background-image:url('mail.png'); 
+background-repeat:no-repeat; 
+background-size:16% 170%;
+background-position: left; 
+background-color:;
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+text-align:center;
+color:black;
+}
+
+
+
+
+
+
+#day
+{
+border-style:solid;
+border-width: 0.2em; 
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+height:2.5em;
+width:6.2em;
+background-color:white;
+color:;
+}
+
+
+
+#month
+{
+border-style:solid;
+border-width: 0.2em; 
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+height:2.5em;
+width:6.2em;
+background-color:white;
+color:;
+}
+
+
+
+
+#year
+{
+border-style:solid;
+border-width: 0.2em; 
+border-color:black;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+height:2.5em;
+width:6.2em;
+background-color:white;
+color:;
+}
+
+
+
+#gender
+{
+height:1.5em;
+width:3em;
+}
+
+
+
+
+
+
+
+
+
+#list
+{
+border-style:solid;
+border-width: 0.2em; 
+border-color:black;
+border-radius:5px;
+height:2.5em;
+width:19em;
+}
+
+
+
+
+#but
+{
+background-color:#123863;
+height:12em;
+width:100%;
+}
+
+
+
+
+
+
+#start
+{
+border-style:solid;
+border-width:1em;
+border-color:white;
+height:80px;
+width:180px;
+background-color:white;
+color:white;
+font-size:24px;
+font-family: "Times New Roman", Times, serif;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align:center;
+font-weight: bold;
+color:#123863;
+}
+
+
+
+
+
+
+#start:hover
+{
+border-style:solid;
+border-width:1em;
+border-color:white;
+height:90px;
+width:190px;
+background-color:white;
+color:white;
+font-size:24px;
+font-family: "Times New Roman", Times, serif;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align:center;
+font-weight: bold;
+color:#123863;
+}
+
+
+
+
+
+
+
+#end
+{
+border-style:solid;
+border-width:1em;
+border-color:white;
+height:80px;
+width:180px;
+background-color:white;
+color:white;
+font-size:24px;
+font-family: "Times New Roman", Times, serif;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align:center;
+font-weight: bold;
+color:#123863;
+}
+
+
+
+
+
+
+#end:hover
+{
+border-style:solid;
+border-width:1em;
+border-color:white;
+height:90px;
+width:190px;
+background-color:white;
+color:white;
+font-size:24px;
+font-family: "Times New Roman", Times, serif;
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+text-align:center;
+font-weight: bold;
+color:#123863;
+}
+
+
+
+
+
+
+div.ex2:hover, div.ex2:active 
+{
+font-size: 150%;
+}
+
+
