@@ -1,0 +1,227 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+#inbox_file
+{
+width:150px;
+text-decoration:none;
+display:inline-block;
+line-height:60px;
+background:white url('/photos/menu/inbox_file.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+color:black;
+}
+
+
+
+
+#inbox_file:hover
+{
+width:150px;
+text-decoration:none;
+background-color:white;
+display:inline-block;
+line-height:60px;
+color:red;
+}
+
+
+
+
+
+#inbox_message
+{
+width:170px;
+text-decoration:none;
+display:inline-block;
+line-height:60px;
+background:white url('/photos/menu/inbox_message.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+color:black;
+}
+
+
+
+
+#inbox_message:hover
+{
+width:170px;
+text-decoration:none;
+background-color:white;
+display:inline-block;
+line-height:60px;
+color:red;
+}
+
+
+
+
+
+
+
+#inbox_storage
+{
+width:230px;
+text-decoration:none;
+display:inline-block;
+line-height:60px;
+background:white url('/photos/menu/inbox_storage.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+color:black;
+}
+
+
+
+
+#inbox_storage:hover
+{
+width:230px;
+text-decoration:none;
+background-color:white;
+display:inline-block;
+line-height:60px;
+color:red;
+}
+
+
+
+
+
+
+
+
+
+#inbox_firewall
+{
+width:200px;
+text-decoration:none;
+display:inline-block;
+line-height:60px;
+background:white url('/photos/menu/inbox_firewall.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+color:green;
+}
+
+
+
+
+#inbox_firewall:hover
+{
+width:200px;
+text-decoration:none;
+background-color:white;
+display:inline-block;
+line-height:60px;
+color:green;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=checkbox] {
+	visibility:visible;
+}
+
+
+.checkbox {
+   width: 80px;
+   height: 46px;
+   margin: auto;
+   position: relative;
+   background: #fff;
+   border: 1px solid #2e2e2e;
+   border-radius: 2px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+text-align: center;
+}
+
+
+.checkbox:after {
+   content: 'On';
+   font: 12px/46px Arial, sans-serif;
+   color: #00bf00;
+   position: absolute;
+   right: 8px;
+   z-index: 0;
+   font-weight: bold;
+text-align: center;
+}
+
+.checkbox:before {
+   content: 'Off';
+   font: 12px/46px Arial, sans-serif;
+   color: #b50000;
+   position: absolute;
+   left: 2px;
+   z-index: 0;
+   font-weight: bold;
+text-align: center;
+}
+
+.checkbox label {
+   display: block;
+   width: 50px;
+   height: 40px;
+   position: absolute;
+   top: 3px;
+   left: 3px;
+   z-index: 1;
+   background: #2e2e2e;
+   -o-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+   -khtml-transition: all 0.5s linear;
+   -webkit-transition: all 0.5s linear;
+   -ms-transition: all 0.5s linear;
+   transition: all 0.5s linear;
+   cursor: pointer;
+   border-radius: 2px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+text-align: center;
+}
+
+.checkbox input[type=checkbox]:checked + label {
+   left: 25px;
+}
+
+
+
+
+
+
+
+

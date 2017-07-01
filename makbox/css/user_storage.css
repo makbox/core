@@ -1,0 +1,107 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+
+table
+{
+border-collapse: separate;
+border-spacing: 100px 70px;
+}
+
+
+
+#tr1
+{
+height:2em;
+position:absolute;
+top:0;
+left:0;
+right:0;
+margin:0 auto;
+width:98.1%;
+padding: 15px;
+background-color:#ff4d4d;
+opacity:;
+color:white;
+text-align:center;
+border-collapse: separate;
+border-spacing: 20px 5px;
+}
+
+
+
+#tr2
+{
+height:2em;
+position:absolute;
+top:60;
+left:0;
+right:0;
+margin:0 auto;
+width:98.78%;
+padding: 10px;
+background-color:#ff4d4d;
+opacity:;
+color:white;
+text-align:center;
+border-collapse: separate;
+border-spacing: 20px 0px;
+}
+
+
+
+
+
+
+
+
+#back
+{
+width:230px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:#ff4d4d;
+display:inline-block;
+line-height:40px;
+border-radius:20px;
+color:white;
+background:#ff4d4d url('/photos/menu/back2_acc.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+}
+
+
+
+
+#back:hover
+{
+width:230px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:#00e64d;
+border-color:#00e64d;
+display:inline-block;
+line-height:40px;
+color:white;
+}
