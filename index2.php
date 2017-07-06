@@ -226,10 +226,10 @@ else
           $current_folder=substr("$folder",9);
  
     
-        chmod("/var/www/$current_folder/core/class_cn.php", 0777);
+        chmod("/var/www/$current_folder/makbox/core/class_cn.php", 0777);
 
 
-       $class_core = fopen("/var/www/$current_folder/core/class_cn.php", "w") or die("Unable to open file!");
+       $class_core = fopen("/var/www/$current_folder/makbox/core/class_cn.php", "w") or die("Unable to open file!");
        $class_core_lines = '<?php' .PHP_EOL
                   .'class in' .PHP_EOL
                   .'{' .PHP_EOL
