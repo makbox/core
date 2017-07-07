@@ -447,8 +447,6 @@ else
 
 
 
-
-
        
        //insert api key  
      $api_key_user="12DEAA2209001287AB00EDFA9902111C";
@@ -529,6 +527,15 @@ else
       $result_space=$conn->query($sql_space);
 
 
+
+
+ 
+
+           // chmod folder for files shared to email for administrator
+
+           chmod("/var/www/$current_folder/makbox/shared_to_email", 0777);
+ 
+           $_SESSION['shared_admin_folder'] = $username;
 
 
 

@@ -24,6 +24,40 @@
   session_start();
 
 
+ if(!isset($_SESSION['start']))
+    {
+     header('Location: index.php');
+      }
+
+
+
+ else if(!isset($_SESSION['step2']))
+    {
+     header('Location: index.php');
+      }
+
+
+
+else if(!isset($_SESSION['step3']))
+    {
+     header('Location: index.php');
+      }
+
+
+else if(!isset($_SESSION['step4']))
+    {
+     header('Location: index.php');
+      }
+
+
+
+else if(!isset($_POST['submit_end']))
+    {
+     header('Location: index.php');
+      }
+
+
+
 ?>
 
 
@@ -137,7 +171,7 @@ window.onload=changeHashOnLoad;
  $oldpath22="/var/www/$current_folder/common.php";
  $newpath22="/var/www/$current_folder/reinstall/common.php";
  $oldpath23="/var/www/$current_folder/db3.php";
- $newpath23="/var/www/$current_folder/reinstall/db3.php.png";
+ $newpath23="/var/www/$current_folder/reinstall/db3.php";
  $oldpath24="/var/www/$current_folder/lang.en.php";
  $newpath24="/var/www/$current_folder/reinstall/lang.en.php";
  $oldpath25="/var/www/$current_folder/lang.gr.php";
@@ -592,7 +626,38 @@ window.onload=changeHashOnLoad;
 
 
 
+    //cut from folder shared_to_email
 
+    $shared_admin_folder = $_SESSION['shared_admin_folder'];
+
+    mkdir ("/var/www/$current_folder/shared_to_email",0777);
+    chmod("/var/www/$current_folder/shared_to_email", 0777);
+
+
+    $src_share_t = "/var/www/$current_folder/makbox/shared_to_email";
+    $dst_share_t = "/var/www/$current_folder/shared_to_email";
+    $files_share_t = glob("/var/www/$current_folder/makbox/shared_to_email/*.*");
+   foreach($files_share_t as $file_share_t)
+    {
+       $file_to_go_share_t = str_replace($src_share_t,$dst_share_t,$file_share_t);
+       copy($file_share_t, $file_to_go_share_t);
+     }
+
+
+     $oldpath_htaccess="/var/www/$current_folder/shared_to_email/htaccess.txt";
+     $newpath_htaccess="/var/www/$current_folder/shared_to_email/.htaccess";
+
+
+     $oldpath_htapasswd="/var/www/$current_folder/shared_to_email/htpasswd.txt";
+     $newpath_htapasswd="/var/www/$current_folder/shared_to_email/.htpasswd";
+
+     rename($oldpath_htaccess,$newpath_htaccess);
+     rename($oldpath_htapasswd,$newpath_htapasswd);
+
+
+
+    mkdir ("/var/www/$current_folder/shared_to_email/$shared_admin_folder",0777);
+    chmod("/var/www/$current_folder/shared_to_email/$shared_admin_folder", 0777);
 
 
 
