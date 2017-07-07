@@ -135,7 +135,7 @@ if (!isset($_SESSION['login']))
                       {
 
               $sql="INSERT INTO folder_uploads (name,type,size,data,folder_name,file_type,_from,_to,created) 
-                    VALUES(' $name','$type','$size','$data','{$_SESSION['folder']}',
+                    VALUES('$name','$type','$size','$data','{$_SESSION['folder']}',
                     'canonical','{$_SESSION['login']}','{$_SESSION['login']}',NOW())";
 
 
@@ -148,6 +148,17 @@ if (!isset($_SESSION['login']))
                    $result2=$conn->query($sql2);
                         //echo '<script type="text/javascript">alert("Success your file uploaded");
                        // </script>';
+
+
+
+                    $uploads_dir  = $_SERVER['DOCUMENT_ROOT'];
+                    $your_folder  = $_SESSION['login'];
+                    $copy = copy($_FILES ['uploaded_my_file']['tmp_name'], "$uploads_dir/shared_to_email/$your_folder/" . $name);
+
+ 
+
+
+
                         sleep(2);
                       echo ("<script>location.href='list_files.php?folder_name=$_SESSION[folder]'</script>"); 
 

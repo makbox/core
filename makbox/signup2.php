@@ -187,8 +187,9 @@ if (($result3) === TRUE)
       $result_space=$conn->query($sql_space);
 
 
+       $uploads_dir  = $_SERVER['DOCUMENT_ROOT'];
 
-
+       mkdir("$uploads_dir/shared_to_email/$username", 0777);
 
 
        // verify acount using email

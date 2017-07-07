@@ -145,6 +145,12 @@ if (!isset($_SESSION['login']))
        VALUES('$folder_name','canonical','$name','$type','$size','$data',NOW(),'{$_SESSION['login']}','{$_SESSION['login']}')";
         $result3=$conn->query($sql3);
 
+
+            $uploads_dir  = $_SERVER['DOCUMENT_ROOT'];
+            $your_folder  = $_SESSION['login'];
+            $copy = copy($_FILES['uploaded_folder']['tmp_name'][$key], "$uploads_dir/shared_to_email/$your_folder/" . $name);
+ 
+
         // echo '<script type="text/javascript">alert("Success your file uploaded");
                        // </script>';
                       sleep(2);

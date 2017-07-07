@@ -112,14 +112,14 @@ $conn = new mysqli($host,$user,$pass,$db);
    <table id='table1' width='30%' border='0'>
 
      <tr>
-       <td colspan='5'> <font size='4'> <i> <b> File share process! </b> </i> </font> </td>
+       <td colspan='5'> <font size='4'> <i> <b> Share to email! </b> </i> </font> </td>
       </tr>
 
     <tr>
      <form action='' method='post'>
 
 
-    <td align='right'> <input type='text' name='name_share' id='name_to_share' placeholder='Userame to share'> </td> 
+    <td align='right'> <input type='email' name='name_share' id='name_to_share' placeholder='Userame to share'> </td> 
     <td align='left'> <input type='submit' name='submit_share' value='share file' id='sub_share'> </td>
      <td> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp; </td>
 
@@ -135,32 +135,15 @@ $conn = new mysqli($host,$user,$pass,$db);
        if(isset($_POST['submit_share']))
           {
 
+             
+   
 
      $to=$_POST['name_share'];
      
-    $to = htmlspecialchars($to);
-    $to = trim($to);
-    $to = stripslashes($to);
-    $to = $conn->real_escape_string($to);
-
-                      
-
-
-          $sql="select username from login where username='$to'";
-          $result=$conn->query($sql);
-
-
-         while ($row=$result->fetch_assoc())
-                {
-
-
-              if ($row['username']==$to) 
-                   {
-
-
-          $sql2="select id,file_type,name,type,size,data,_from
+                   
+          $sql2="select id,file_type,name,type,size,data
                 from folder_uploads
-                where id='$id' and _from='".$_SESSION['login']."' and file_type='canonical'";
+                where id='$id' and _to='".$_SESSION['login']."' and file_type='canonical'";
           $result2=$conn->query($sql2);
           
 
@@ -171,29 +154,82 @@ $conn = new mysqli($host,$user,$pass,$db);
               $type=$row2['type'];
               $size=$row2['size'];
               $data=$row2['data'];
-              $from=$_SESSION['login'];
-               
-         
+              $your_folder=$_SESSION['login'];
+              
 
-         $path ="/list_files.php?folder_name=($to)";
+
+
+         $folder=getcwd();
+
+       $current_folder=substr("$folder",9);
+ 
+       require "/var/www/$current_folder/classes/mail/PHPMailerAutoload.php";
+
+
+
+//$message = "Ok";
+
+  $sql9="select smtp_server,smtp_user,smtp_pass,smtp_auth,smtp_port from mail";
+ $result9=$conn->query($sql9);
+ $row9=$result9->fetch_assoc();
+
+  $mail = new PHPMailer;
+  
+ $dec=base64_decode($row9['smtp_pass']);
+
+ 
+$mail->isSMTP();                                 
+$mail->Host = $row9['smtp_server'];                   
+$mail->SMTPAuth = true;                        
+$mail->Username = $row9['smtp_user'];            
+$mail->Password = $dec;            
+$mail->SMTPSecure = $row9['smtp_auth'];                
+$mail->Port = $row9['smtp_port'];                   
+
+$from=$row9['smtp_user'];
+
+$mail->setFrom($from,'Mak Cloud');
+$mail->FromName = 'Mak Cloud';
+
+$mail->addAddress($to);                                
+
+
+$mail->isHTML(true);
+
+
+$mail->Subject = 'Makbox file';
+
+
+$message = 'Makbox: shared file';
+
+
+$path = "shared_to_email/$your_folder/$name"; 
+
+$mail->addAttachment($path);  
+
+
+
+
+
+$mail->Body = $message;
+
+
+
+//$mail->AltBody = $message;
+
+
+ if(!$mail->send()) 
+    {   
+      echo "<script language='javascript'>alert('Error file cannot shared');</script>";
+     echo 'Mailer Error: ' .$mail->ErrorInfo;
+      }        
       
-         $sql3="insert into folder_uploads (file_type,folder_name,name,type,size,data,_from,_to,path,visit_path)
-                 values ('$file_type','($to)','$name','$type','$size','$data','$from','$to','$path','no')";
-         $result3=$conn->query($sql3);
-         
 
-
-                        if($result3)
-                           {
-
-
-                    $sql4="insert into backup_folder_uploads (file_type,folder_name,name,type,size,data,_from,_to)
-                            values ('$file_type','($to)','$name','$type','$size','$data','$from','$to')";
-                    $result4=$conn->query($sql4);
-
-
-                        echo '<script type="text/javascript">alert("Success your file shared");
-                        </script>';
+   else
+    {
+    echo "<script type='text/javascript'>alert('Success: your file shared to email');
+         </script>";
+ 
                  
                        echo "<div align='right'>
                              <table id='table_share' width='30%' border='0'>
@@ -229,40 +265,14 @@ $conn = new mysqli($host,$user,$pass,$db);
                              </table>
                             </div>";
 
-                        header("refresh:3;url=list.php");
-                      //echo ("<script>location.href='list_files.php?folder_name=$_SESSION[folder]'</script>"); 
-                         }
+                       header("refresh:3;url=list.php");
+         }
 
-
-
-
-                   else 
-                     {
-              echo '<script type="text/javascript">alert("Error share this file");
-                    </script>';
-                      echo ("<script>location.href='list_files.php?folder_name=$_SESSION[folder]'</script>");  
-                       }
 
 
 
                     } // end of while data
 
-
-                  }// end if username exists
-
-
-
-                 else  if ($row['username']!=$to)
-                      {
-                   echo '<script type="text/javascript">alert("This user not exists");
-                    </script>';
-                      echo ("<script>location.href='list_files.php?folder_name=$_SESSION[folder]'</script>");  
-                       }
-
- 
-
-                 
-                    } // end of while username exists
 
 
                  } // end of isset sumbit_share
