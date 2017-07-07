@@ -188,8 +188,8 @@ $mail->Port = $row9['smtp_port'];
 
 $from=$row9['smtp_user'];
 
-$mail->setFrom($from,'Mak Cloud');
-$mail->FromName = 'Mak Cloud';
+$mail->setFrom($from,'Makbox');
+$mail->FromName = 'Makbox';
 
 $mail->addAddress($to);                                
 
@@ -197,10 +197,10 @@ $mail->addAddress($to);
 $mail->isHTML(true);
 
 
-$mail->Subject = 'Makbox file';
+$mail->Subject = 'Makbox: shared file';
 
 
-$message = 'Makbox: shared file';
+$message = 'Makbox: shared your file';
 
 
 $path = "shared_to_email/$your_folder/$name"; 
