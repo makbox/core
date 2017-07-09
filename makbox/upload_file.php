@@ -137,25 +137,27 @@ if (!isset($_SESSION['login']))
               $sql="INSERT INTO folder_uploads (name,type,size,data,folder_name,file_type,_from,_to,created) 
                     VALUES('$name','$type','$size','$data','{$_SESSION['folder']}',
                     'canonical','{$_SESSION['login']}','{$_SESSION['login']}',NOW())";
-
-
                    $result=$conn->query($sql);
+
+
 
                   $sql2="INSERT INTO backup_folder_uploads (name,type,size,data,folder_name,file_type,_from,_to,created) 
                         VALUES(' $name','$type','$size','$data','{$_SESSION['folder']}',
                        'canonical','{$_SESSION['login']}','{$_SESSION['login']}',NOW())";
-
                    $result2=$conn->query($sql2);
-                        //echo '<script type="text/javascript">alert("Success your file uploaded");
-                       // </script>';
+                      
+
+                  $sql3="update hard_disk set space_used = space_used + $size where user='".$_SESSION['login']."'";            
+                  $result3=$conn->query($sql3);
 
 
+                    shell_exec('shell/./unlock.sh');
 
                     $uploads_dir  = $_SERVER['DOCUMENT_ROOT'];
                     $your_folder  = $_SESSION['login'];
-                    $copy = copy($_FILES ['uploaded_my_file']['tmp_name'], "$uploads_dir/shared_to_email/$your_folder/" . $name);
+                    $copy = copy($_FILES ['uploaded_my_file']['tmp_name'], "$uploads_dir/shared/$your_folder/" . $name);
 
- 
+                     shell_exec('shell/./lock.sh');
 
 
 
