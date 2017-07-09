@@ -3,6 +3,6 @@ AuthName "Stop hacker."
 
 AuthType Basic
 
-AuthUserFile /var/www/makbox/shared_to_email/.htpasswd
+AuthUserFile /var/www/makbox/shared/.htpasswd
 
 require user makbox
