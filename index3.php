@@ -533,7 +533,7 @@ else
 
            // chmod folder for files shared to email for administrator
 
-           chmod("/var/www/$current_folder/makbox/shared_to_email", 0777);
+           chmod("/var/www/$current_folder/makbox/shared/", 0777);
  
            $_SESSION['shared_admin_folder'] = $username;
 
