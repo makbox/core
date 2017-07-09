@@ -257,12 +257,13 @@ $result=$conn->query($sql);
            
                 <tr>
                     <td> <font color="black"> <b> Created </b> </font> </td>
-                     <td> <font color="black"> <b> From </b> </font> </td>
+                    <td> <font color="black"> <b> From </b> </font> </td>
                     <td> <font color="black"> <b> Name </b> </font> </td> 
                     <td> <font color="black"> <b> Size (bytes) </b> </font> </td>
                     <td> <font color="black"> <b> Type </b> </font> </td>
                     <td> <font color="black"> <b> View &nbsp; </b> </font> </td>
-                    <td align="center"> <font color="black"> <b> Share </b> </font> </td>
+                    <td align="center"> <font color="black"> <b> User </b> </font> </td>
+                    <td align="center"> <font color="black"> <b> Email </b> </font> </td>
                     <td align="center"> <font color="black"> <b> Download </b> </font> </td>
 
    <td>
@@ -319,10 +320,20 @@ $result=$conn->query($sql);
               </td> 
 
                   <td align='center' id='td_list_new'> 
-                    <a href='list_files_share.php?id={$row['id']}'>
+                    <a href='list_files_share_user.php?id={$row['id']}'>
+                     <img src='/photos/menu/share0.svg' id='img_size'>
+                      </a>
+                    </td>
+            
+                   
+
+              <td align='center' id='td_list_new'> 
+                    <a href='list_files_share_email.php?id={$row['id']}'>
                      <img src='/photos/menu/share.png' id='img_size'>
-                   </a>
-                 </td> 
+                      </a>
+                    </td>
+
+
 
                   <td align='center' id='td_list_new'>
        <a href='download_from_folder.php?id={$row['id']}'> <img src='/photos/menu/download.png' id='img_size'> </a>  
@@ -349,11 +360,20 @@ $result=$conn->query($sql);
           <a href='view_files.php?id={$row['id']}' target='_blank'> <img src='/photos/view/view.png' id='img_size'> </a>
               </a>  
               </td> 
+
                   <td align='center'> 
-                    <a href='list_files_share.php?id={$row['id']}'>
+                    <a href='list_files_share_user.php?id={$row['id']}'>
+                     <img src='/photos/menu/share0.svg' id='img_size'>
+                   </a>
+                 </td> 
+
+
+               <td align='center'> 
+                    <a href='list_files_share_email.php?id={$row['id']}'>
                      <img src='/photos/menu/share.png' id='img_size'>
                    </a>
                  </td> 
+
                   <td align='center'>
        <a href='download_from_folder.php?id={$row['id']}'> <img src='/photos/menu/download.png' id='img_size'> </a>  
                  </td> 
