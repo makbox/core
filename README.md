@@ -6,7 +6,7 @@ Makbox core for web server (upload, share, etc.)
 
 Installation <br>
 
-1) Modify yoyr server file <br>
+1) Modify your server file <br>
 for http server: <br>
 change the files /etc/apache2/sites-available/000-deafult.conf  <br>
 and replace with this  <br>
