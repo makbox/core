@@ -230,9 +230,11 @@ $conn = new mysqli($host,$user,$pass,$db);
 
                            </p>";
 
-                        shell_exec('shell/./lock.sh');
+                       shell_exec('shell/./lock.sh');
 
                        header("refresh:5;url=list_folder.php");
+
+                        exit();
 
                     }        
       
@@ -244,6 +246,8 @@ $conn = new mysqli($host,$user,$pass,$db);
                 echo "<p class='text-center'>
                       <font size='4' color='red'> Failed: your file cannot be shared to user $to </font> <br>
                        </p>";
+                     header("refresh:5;url=list_folder.php");
+                    exit();
                    }
 
 
@@ -262,7 +266,8 @@ $conn = new mysqli($host,$user,$pass,$db);
                 echo "<p class='text-center'>
                       <font size='4' color='red'> This user does not exist: please try again </font> <br>
                        ";
-
+                    header("refresh:5;url=list_folder.php");
+                    exit();
                  }
 
 
@@ -280,6 +285,7 @@ $conn = new mysqli($host,$user,$pass,$db);
 
 
 
+
  
         } // end else of data
         
@@ -293,7 +299,6 @@ $conn = new mysqli($host,$user,$pass,$db);
 
 
 ?>
-
 
 
 
