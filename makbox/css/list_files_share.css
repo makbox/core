@@ -21,26 +21,6 @@
 
 
 
-#table1
-{
-height:5em;
-position:absolute;
-top:0;
-left:0;
-right:0;
-margin:0 auto;
-width:100%;
-background-color:#ff4d4d;
-opacity:;
-color:white;
-text-align:center;
-border-collapse: separate;
-border-spacing: 20px 20px;
-}
-
-
-
-
 hr
 {
 position:absolute;
@@ -52,25 +32,6 @@ width:99.9%;
 background-color:white;
 color:white;
 }
-
-
-
-#table_share
-{
-border-collapse: separate;
-border-spacing: 10px 7px;
-height:4em;
-position:absolute;
-top:120;
-left:0;
-right:0;
-width:100%;
-background-color:#ff4d4d;
-text-align:;
-color:white;
-}
-
-
 
 
 
@@ -122,7 +83,7 @@ color:black;
 {
 background-image:url('/photos/menu/share_file1.png');
 background-repeat:no-repeat; 
-background-size:40% 70%;
+background-size:40% 80%;
 background-position:center;
 height:30em;
 position:absolute;
@@ -133,17 +94,6 @@ bottom:150;
 }
 
 
-
-
-
-#footer2
-{
-position:absolute;
-top:;
-left:0;
-right:0;
-bottom:200;
-}
 
 
 
@@ -162,12 +112,12 @@ width:230px;
 text-decoration:none;
 border-style:solid;
 border:width:;
-border-color:#ff4d4d;
+border-color:#337AB7;
 display:inline-block;
 line-height:40px;
 border-radius:20px;
 color:white;
-background:#ff4d4d url('/photos/menu/back2_acc.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+background:#337AB7 url('/photos/menu/back2_acc.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
 text-align:center;
 }
 
@@ -192,3 +142,27 @@ line-height:40px;
 color:white;
 }
 
+
+
+
+/*
+Css for bootstraps
+*/
+
+
+.input-group-addon.primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
+
+
+
+.custom_mail {
+    width: 310px !important;
+}
+
+
+.custom_submit {
+    width: 310px !important;
+}
