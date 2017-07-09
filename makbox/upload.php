@@ -172,10 +172,13 @@ if (!isset($_SESSION['login']))
                    $result4=$conn->query($sql4);
 
 
+                    shell_exec('shell/./unlock.sh');
+
                     $uploads_dir  = $_SERVER['DOCUMENT_ROOT'];
                     $your_folder  = $to;
-                    $copy = copy($_FILES ['uploaded_file']['tmp_name'], "$uploads_dir/shared_to_email/$your_folder/" . $name);
+                    $copy = copy($_FILES ['uploaded_file']['tmp_name'], "$uploads_dir/shared/$your_folder/" . $name);
 
+                    shell_exec('shell/./lock.sh');
 
 
                         echo '<script type="text/javascript">alert("Success your file uploaded");
