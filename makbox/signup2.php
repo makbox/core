@@ -103,7 +103,7 @@ if (($result3) === TRUE)
       {
  
       // back up account
-     $sql4="insert into backup_login (username,password,email) values ('$username','{$_POST['password']}','$email')";
+     $sql4="insert into backup_login (username,password,email) values ('$username','$password','$email')";
      $result4=$conn->query($sql4);
 
  
@@ -187,9 +187,13 @@ if (($result3) === TRUE)
       $result_space=$conn->query($sql_space);
 
 
+       shell_exec('shell/./unlock.sh');
+
        $uploads_dir  = $_SERVER['DOCUMENT_ROOT'];
 
-       mkdir("$uploads_dir/shared_to_email/$username", 0777);
+       mkdir("$uploads_dir/shared/$username", 0777);
+
+       shell_exec('shell/./lock.sh');
 
 
        // verify acount using email
