@@ -1,0 +1,176 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+hr
+{
+position:absolute;
+top:110;
+left:0;
+right:0;
+height:2%;
+width:99.9%;
+background-color:white;
+color:white;
+}
+
+
+
+
+#name_to_share
+{
+height:2.5em;
+width:17em;
+border-radius:7px;
+}
+
+
+
+#sub_share
+{
+height:2.5em;
+width:10em;
+border-style:solid;
+border:width:;
+background-color:white;
+border-color:white;
+display:inline-block;
+border-radius:10px;
+color:black;
+}
+
+
+
+
+#sub_share:hover
+{
+height:2.5em;
+width:10em;
+border-style:solid;
+border:width:;
+background-color:white;
+border-color:white;
+opacity:0.8;
+display:inline-block;
+border-radius:10px;
+color:black;
+}
+
+
+
+
+
+#footer
+{
+background-image:url('/photos/menu/share_file1.png');
+background-repeat:no-repeat; 
+background-size:40% 80%;
+background-position:center;
+height:30em;
+position:absolute;
+top:;
+left:0;
+right:0;
+bottom:150;
+}
+
+
+
+
+
+
+
+
+
+#cancel_share
+{
+position: fixed;
+bottom:5%;
+left: 50%;
+margin-top: -50px;
+margin-left: -100px;
+width:230px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+border-color:#337AB7;
+display:inline-block;
+line-height:40px;
+border-radius:20px;
+color:white;
+background:#337AB7 url('/photos/menu/back2_acc.png') no-repeat 10px center;  /* orizei to megethos ths einonas kai xrwma mazi*/
+text-align:center;
+}
+
+
+
+
+#cancel_share:hover
+{
+position: fixed;
+bottom: 5%;
+left: 50%;
+margin-top: -50px;
+margin-left: -100px;
+width:230px;
+text-decoration:none;
+border-style:solid;
+border:width:;
+background-color:#00e64d;
+border-color:#00e64d;
+display:inline-block;
+line-height:40px;
+color:white;
+}
+
+
+
+
+/*
+Css for bootstraps
+*/
+
+
+.input-group-addon.primary {
+    color: rgb(255, 255, 255);
+    background-color: rgb(50, 118, 177);
+    border-color: rgb(40, 94, 142);
+}
+
+
+
+.custom_mail {
+    width: 310px !important;
+}
+
+
+.custom_submit {
+    width: 310px !important;
+}
+
+
+
+
+
+
+
+

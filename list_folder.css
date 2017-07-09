@@ -1,0 +1,478 @@
+/*
+ * Copyright (c) 2016-2017 Barchampas Gerasimos <http://makbox.co.nf/>
+ * Makbox is a personal (staas) cloud.
+ *
+ * Makbox is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU Affero General Public License as
+ * published by the Free Software Foundation, either version 3 of the
+ * License, or (at your option) any later version.
+ *
+ *
+ * Makbox is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU Affero General Public License for more details.
+ *
+ * You should have received a copy of the GNU Affero General Public License, version 3,
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>
+ *
+ */
+
+
+
+
+
+#body
+{
+background-image:url('/photos/menu/folde.png');
+background-repeat:no-repeat;
+background-size:100%;
+}
+
+
+
+
+input[type=checkbox] 
+{
+transform: scale(1.5);
+}
+
+
+
+
+
+
+
+
+#menu
+{
+background-image:url('');
+background-repeat:no-repeat;
+background-size:100%;
+background-color:#283B4C;
+padding: 1px;
+margin: auto;
+text-align:center;
+text-decoration: none;
+display: inline-block;
+border-style:solid;
+border-width:0em;
+border-color:red;
+width:100%;
+position: absolute;
+top:0%;
+left:0%;
+box-shadow:none;
+opacity:1;
+}
+
+
+
+
+#table1
+{
+border-style:;
+border-width:; 
+border-color:;
+background-color:;
+border-collapse:separate; 
+border-spacing:0.1em;
+font-size: 18px;
+font-family:;
+}
+
+
+
+#th
+{
+padding:6px;
+color:white;
+}
+
+
+#td
+{
+padding:20px;
+margin-bottom:0.6cm;
+}
+
+
+
+
+
+
+#file1
+{
+display: inline-block;
+border-radius: 4px;
+background-color:grey;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 10px;
+width: 190px;
+height:63px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+
+
+
+
+
+
+#file2
+{
+display: inline-block;
+border-radius: 4px;
+background-color:grey;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 10px;
+width: 180px;
+height:63px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+
+
+
+
+#folder_name
+{
+background-color:white;
+opacity:0.7;
+text-align:center;
+height:63px;
+width:220px;
+border:0em;
+display: inline-block;
+border-radius: 5px;
+}
+
+
+
+
+
+
+
+#upload
+{
+background-image:url('/photos/menu/.jpg');
+background-repeat:no-repeat;
+background-size:100%;
+height:65px;
+width:110px;
+border:0em;
+display: inline-block;
+border-radius: 5px;
+background-color:grey;
+}
+
+
+
+
+#upload:hover
+{
+background-image:url('/photos/menu/.jpg');
+background-repeat:no-repeat;
+background-size:100%;
+height:65px;
+width:110px;
+border:0em;
+display: inline-block;
+border-radius: 5px;
+background-color:white;
+}
+
+
+
+
+
+
+
+
+
+#directory
+{
+background-image:url('/photos/menu/folder2.png');
+background-repeat:no-repeat;
+background-size:100% 100%;
+padding-left: 10px;
+padding:25px;
+height:;
+width:;
+margin-bottom:0.3cm; /* edw afhnei keno katheta */
+color:black;
+text-decoration: none;
+}
+
+
+
+
+#directory:hover
+{
+background-image:url('/photos/menu/folder.png');
+background-repeat:no-repeat;
+background-size:100% 100%;
+padding-left: 10px;
+padding:25px;
+height:;
+width:;
+margin-bottom:0.3cm; /* edw afhnei keno katheta */
+color:white;
+text-decoration: none;
+}
+
+
+
+
+
+#welcome
+{
+background-image:url('/photos/menu/folder2.png');
+background-repeat:no-repeat;
+background-size:100% 100%;
+padding-left: 16px;
+padding:10px;
+height: 10px;
+width: 70px;
+margin-bottom:0.3cm; /* edw afhnei keno katheta */
+color:black;
+text-decoration: none;
+}
+
+
+
+
+
+
+
+
+#text
+{
+background-color:white;
+background-image:url('/photos/menu/text.png');
+background-repeat:no-repeat;
+background-size:100% 100%;
+padding-left: 16px;
+padding:10px;
+height: 10%;
+width:10%;
+margin-bottom:0.3cm; /* edw afhnei keno katheta */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=checkbox] {
+	visibility:visible;
+}
+
+
+.checkbox {
+   width: 80px;
+   height: 30px;
+   margin: auto;
+   position: relative;
+   background: #fff;
+   border: 1px solid #2e2e2e;
+   border-radius: 2px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+text-align: center;
+}
+
+
+.checkbox:after {
+   content: 'No';
+   font: 12px/26px Arial, sans-serif;
+   color: #b50000;
+   position: absolute;
+   right: 8px;
+   z-index: 0;
+   font-weight: bold;
+text-align: center;
+}
+
+.checkbox:before {
+   content: 'Yes';
+   font: 12px/26px Arial, sans-serif;
+   color: #00bf00;
+   position: absolute;
+   left: 2px;
+   z-index: 0;
+   font-weight: bold;
+text-align: center;
+}
+
+.checkbox label {
+   display: block;
+   width: 50px;
+   height: 28px;
+   position: absolute;
+   top: 1px;
+   left: 3px;
+   z-index: 1;
+   background: #2e2e2e;
+   -o-transition: all 0.5s linear;
+   -moz-transition: all 0.5s linear;
+   -khtml-transition: all 0.5s linear;
+   -webkit-transition: all 0.5s linear;
+   -ms-transition: all 0.5s linear;
+   transition: all 0.5s linear;
+   cursor: pointer;
+   border-radius: 2px;
+   -webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+text-align: center;
+}
+
+.checkbox input[type=checkbox]:checked + label {
+   left: 25px;
+}
+
+
+
+
+
+
+
+#delete
+{
+border:0;
+opacity:0.7;
+display: inline-block;
+border-radius: 4px;
+background-color:red;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 10px;
+width: 65px;
+height:45px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+
+#delete:hover
+{
+border:0;
+opacity:1;
+display: inline-block;
+border-radius: 4px;
+background-color:red;
+border: none;
+color: #FFFFFF;
+text-align: center;
+font-size: 28px;
+padding: 10px;
+width: 65px;
+height:45px;
+transition: all 0.5s;
+cursor: pointer;
+margin: 5px;
+}
+
+
+
+
+
+#img_size
+{
+height:30;
+width:35;
+}
+
+
+
+#img_size:hover
+{
+height:33;
+width:38;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#tr_list:hover td 
+{
+background-color: #42f489;
+}
+
+
+
+
+#td_list_new 
+{
+background-color:#87f2e7;
+}
+
+
+
+
+
+
+
+
+.css_btn_class {
+	font-size:22px;
+	font-family:Arial;
+	font-weight:normal;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+	border:6px solid #dcdcdc;
+	padding:2px 4px;
+	text-decoration:none;
+	background:-moz-linear-gradient( center top, #ededed 21%, #dfdfdf 84% );
+	background:-ms-linear-gradient( top, #ededed 21%, #dfdfdf 84% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(21%, #ededed), color-stop(84%, #dfdfdf) );
+	background-color:#ededed;
+	color:#777777;
+	display:inline-block;
+	text-shadow:5px 12px 15px #ffffff;
+ 	-webkit-box-shadow: 1px 1px 11px -14px #ffffff;
+ 	-moz-box-shadow: 1px 1px 11px -14px #ffffff;
+ 	box-shadow: 1px 1px 11px -14px #ffffff;
+}.css_btn_class:hover {
+	background:-moz-linear-gradient( center top, #dfdfdf 21%, #ededed 84% );
+	background:-ms-linear-gradient( top, #dfdfdf 21%, #ededed 84% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(21%, #dfdfdf), color-stop(84%, #ededed) );
+	background-color:#dfdfdf;
+}.css_btn_class:active {
+	position:relative;
+	top:1px;
+}
+
