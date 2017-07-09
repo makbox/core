@@ -181,7 +181,7 @@ while ($row=$result->fetch_assoc())
 
 
     $sql5="insert login_error_attempts (ip_addr,browser,username,password) 
-           values('$ip_addr2','$yourbrowser','$username','".$_POST['password']."')";
+           values('$ip_addr2','$yourbrowser','$username','$password')";
     $result5=$conn->query($sql5);   
   header('Location: index.php');
    } 
