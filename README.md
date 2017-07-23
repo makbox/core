@@ -95,7 +95,7 @@ EECDH EDH+aRSA RC4 !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS" <br>
   
 4) unzip the core into /var/www/makbox  <br>
 
-5) cut all files from sumbolder /var/www/makbox/core and copy into folder /var/www/makbox  <br>
+5) cut all files from subfolder /var/www/makbox/core and copy into folder /var/www/makbox  <br>
    delete subfolder core  <br>
 
  
