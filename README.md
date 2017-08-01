@@ -99,6 +99,6 @@ EECDH EDH+aRSA RC4 !aNULL !eNULL !LOW !3DES !MD5 !EXP !PSK !SRP !DSS" <br>
    delete subfolder core  <br>
 
  
-6) OPen your borowser and follow the steps for install makbox  <br>
+6) Open your browser and follow the steps for install makbox  <br>
 
 
